@@ -1,0 +1,19 @@
+<div id="reaction">
+  <img src="<%= Reaction.at_random(params[:title]) %>" />
+  <form action="/" method="get" accept-charset="utf-8">
+    <%= select_tag :title, options_for_select(Reaction.tags, params[:title]), id: :title_select %>
+    <%= submit_tag "React!" %>
+    <button id="random">Random!</button>
+  </form>
+</div>
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+$(function() {
+  $('#random').on('click', function() {
+    var options = $('#title_select').find('option'),
+    random = ~~(Math.random() * options.length);
+    options.eq(random).prop('selected', true);
+  });
+});
+</script>
