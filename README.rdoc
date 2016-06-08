@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://en.wikipedia.org/wiki/They_Killed_Him
 
-Things you may want to cover:
+The backend here provides URLs for a subject, an MO, and a reaction gif.
 
-* Ruby version
+ENJOY.
 
-* System dependencies
+-Sam Livingston-Gray (https://github.com/geeksam) and Nathan Ostgard (https://github.com/noonat)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
